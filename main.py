@@ -12,10 +12,10 @@ def hello_world():
   name = os.environ.get("NAME", "World")
   return f"Hello {name}!"
 
-  @app.route("/cardapio")
-  def get_cardapio():
-    cardapio = get_cardapio()
-    return cardapio
+@app.route("/cardapio")
+def get_cardapio1():
+  cardapio = get_cardapio()
+  return cardapio
 
 
 if __name__ == "__main__":
